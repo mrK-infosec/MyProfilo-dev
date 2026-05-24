@@ -113,7 +113,7 @@ export default function Projects() {
           className="mt-7 flex justify-center"
         >
           <a
-            href="https://github.com/abdelrahmanadel"
+            href="https://github.com/mrK-infosec/"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-1.5 text-sm text-zinc-500 hover:text-zinc-300 transition-colors"

@@ -5,7 +5,7 @@ export const projects = [
     description:
       "A full-featured project management platform built for teams. Includes kanban boards, task tracking, team collaboration, and real-time updates.",
     tags: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Tailwind CSS"],
-    href: "https://github.com/abdelrahmanadel",
+    href: "https://github.com/mrK-infosec/",
     image: "/projects/timgad.png",
     featured: true,
   },
@@ -15,7 +15,7 @@ export const projects = [
     description:
       "A modern, responsive admin dashboard with charts, data tables, authentication, and dark mode support built with React and Recharts.",
     tags: ["React", "TypeScript", "Recharts", "Tailwind CSS", "Shadcn UI"],
-    href: "https://github.com/abdelrahmanadel",
+    href: "https://github.com/mrK-infosec/",
     image: "/projects/admin.png",
     featured: true,
   },
@@ -25,7 +25,7 @@ export const projects = [
     description:
       "An interactive training and progress-tracking application with gamification elements, XP systems, and user achievement boards.",
     tags: ["Next.js", "React", "Supabase", "Tailwind CSS"],
-    href: "https://github.com/abdelrahmanadel",
+    href: "https://github.com/mrK-infosec/",
     image: "/projects/dragons.png",
     featured: true,
   },
@@ -35,7 +35,7 @@ export const projects = [
     description:
       "This very portfolio — built with Next.js 15, Framer Motion, and Tailwind CSS. Fully responsive with dark mode and smooth animations.",
     tags: ["Next.js", "Framer Motion", "Tailwind CSS", "TypeScript"],
-    href: "https://github.com/abdelrahmanadel",
+    href: "https://github.com/mrK-infosec/",
     image: "/projects/portfolio.png",
     featured: false,
   },
@@ -87,17 +87,17 @@ export const blogPosts = [
 export const socialLinks = [
   {
     name: "GitHub",
-    href: "https://github.com/abdelrahmanadel",
+    href: "https://github.com/mrK-infosec/",
     icon: "github",
   },
   {
     name: "X (Twitter)",
-    href: "https://x.com/abdelrahmanadel",
+    href: "https://x.com/0x41abdoadel",
     icon: "x",
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/in/abdelrahmanadel",
+    href: "https://www.linkedin.com/in/abdul-rahmanadel/",
     icon: "linkedin",
   },
 ];

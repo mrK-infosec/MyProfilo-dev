@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: "Abdelrahman Adel — Fullstack Developer",
     description:
       "Fullstack developer passionate about building clean, performant web experiences.",
-    creator: "@abdelrahmanadel",
+    creator: "@0x41abdoadel",
   },
   robots: {
     index: true,
