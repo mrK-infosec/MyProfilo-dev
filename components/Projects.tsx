@@ -4,9 +4,12 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { projects } from "@/lib/data";
 import { ArrowUpRight, ExternalLink } from "lucide-react";
+import Image from "next/image";
+
 
 const techColors: Record<string, string> = {
   "Next.js": "bg-zinc-800 text-zinc-300",
+  "Next.js 15": "bg-zinc-800 text-zinc-300",
   TypeScript: "bg-blue-950/60 text-blue-300",
   React: "bg-cyan-950/60 text-cyan-300",
   "Tailwind CSS": "bg-teal-950/60 text-teal-300",
@@ -16,6 +19,14 @@ const techColors: Record<string, string> = {
   "Framer Motion": "bg-purple-950/60 text-purple-300",
   Recharts: "bg-orange-950/60 text-orange-300",
   "Shadcn UI": "bg-zinc-800 text-zinc-300",
+  HTML5: "bg-orange-950/60 text-orange-300",
+  CSS3: "bg-blue-950/60 text-blue-300",
+  JavaScript: "bg-yellow-950/60 text-yellow-300",
+  SaaS: "bg-pink-950/60 text-pink-300",
+  "CSS Grid": "bg-indigo-950/60 text-indigo-300",
+  Flexbox: "bg-violet-950/60 text-violet-300",
+  "Responsive Design": "bg-teal-950/60 text-teal-300",
+  "Drag & Drop": "bg-purple-950/60 text-purple-300",
 };
 
 function getTagClass(tag: string) {
@@ -69,11 +80,21 @@ export default function Projects() {
               {/* Shine overlay */}
               <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none bg-gradient-to-br from-violet-500/[0.04] via-transparent to-transparent" />
 
-              {/* Image placeholder */}
-              <div className="shrink-0 w-full sm:w-28 h-16 sm:h-16 rounded-lg bg-gradient-to-br from-zinc-800 to-zinc-900 border border-white/[0.06] flex items-center justify-center">
-                <span className="text-xl font-bold opacity-20 text-zinc-400 select-none">
-                  {project.title.charAt(0)}
-                </span>
+              {/* Project preview image */}
+              <div className="shrink-0 w-full sm:w-28 h-16 sm:h-16 rounded-lg overflow-hidden border border-white/[0.08] bg-zinc-900/50 backdrop-blur-sm flex items-center justify-center relative shadow-inner">
+                {project.image ? (
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    width={112}
+                    height={64}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                ) : (
+                  <span className="text-xl font-bold opacity-20 text-zinc-400 select-none">
+                    {project.title.charAt(0)}
+                  </span>
+                )}
               </div>
 
               {/* Content */}

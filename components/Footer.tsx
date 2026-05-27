@@ -42,13 +42,13 @@ export default function Footer() {
 
           {/* Email button */}
           <motion.a
-            href="mailto:contact@abdelrahman.dev"
+            href="mailto:abdoadel3337@hotmail.com"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-violet-600 hover:bg-violet-500 text-white text-sm font-medium transition-colors duration-200 mb-10"
           >
             <Mail size={14} />
-            contact@abdelrahman.dev
+            abdoadel3337@hotmail.com
           </motion.a>
 
           {/* Social icons */}
